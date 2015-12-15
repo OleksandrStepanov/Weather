@@ -4,6 +4,9 @@ $(function() {
         $('#temptoday').html(data.list[0].temp.day);
         $('#temptomorrow').html(data.list[1].temp.day);
         $('#tempaftertomorrow').html(data.list[2].temp.day);
+        $('#pressuretoday').html(data.list[0].pressure);
+        $('#pressuretomorrow').html(data.list[1].pressure);
+        $('#pressureaftertomorrow').html(data.list[2].pressure);
     });
     
 });
