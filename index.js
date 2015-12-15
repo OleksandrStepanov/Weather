@@ -7,6 +7,10 @@ $(function() {
         $('#pressuretoday').html(data.list[0].pressure);
         $('#pressuretomorrow').html(data.list[1].pressure);
         $('#pressureaftertomorrow').html(data.list[2].pressure);
+        $('#icontoday').html('<img src = "images/'+data.list[0].weather[0].icon+'.png" alt="Weather icon">');
+        $('#icontomorrow').html('<img src = "images/'+data.list[1].weather[0].icon+'.png" alt="Weather icon">');
+        $('#iconaftertomorrow').html('<img src = "images/'+data.list[2].weather[0].icon+'.png" alt="Weather icon">');
+        
     });
     
 });
